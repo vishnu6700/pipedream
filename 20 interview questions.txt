@@ -1,0 +1,124 @@
+What is Python? What are the benefits of using Python
+Python is a high-level, interpreted, general-purpose programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Additionally, python supports objects, modules, threads, exception-handling, and automatic memory management which help in modelling real-world problems and building applications to solve these problems.
+
+What is a dynamically typed language?
+Before we understand a dynamically typed language, we should learn about what typing is. Typing refers to type-checking in programming languages. In a strongly-typed language, such as Python, "1" + 2 will result in a type error since these languages don't allow for "type-coercion" (implicit conversion of data types). On the other hand, a weakly-typed language, such as Javascript, will simply output "12" as result.
+
+What are lists and tuples? What is the key difference between the two?
+Lists and Tuples are both sequence data types that can store a collection of objects in Python. The objects stored in both sequences can have different data types. Lists are represented with square brackets ['sara', 6, 0.19], while tuples are represented with parantheses ('ansh', 5, 0.97).
+But what is the real difference between the two? The key difference between the two is that while lists are mutable, tuples on the other hand are immutable objects. This means that lists can be modified, appended or sliced on the go but tuples remain constant and cannot be modified in any manner
+
+What is pass in Python?
+The pass keyword represents a null operation in Python. It is generally used for the purpose of filling up empty blocks of code which may execute during runtime but has yet to be written. Without the pass statement in the following code, we may run into some errors during code execution.
+
+ What are global, protected and private attributes in Python?
+Global variables are public variables that are defined in the global scope. To use the variable in the global scope inside a function, we use the global keyword.
+Protected attributes are attributes defined with an underscore prefixed to their identifier eg. _sara. They can still be accessed and modified from outside the class they are defined in but a responsible developer should refrain from doing so.
+Private attributes are attributes with double underscore prefixed to their identifier eg. __ansh. They cannot be accessed or modified from the outside directly and will result in an AttributeError if such an attempt is made
+
+What is the use of self in Python?
+Self is used to represent the instance of the class. With this keyword, you can access the attributes and methods of the class in python. It binds the attributes with the given arguments. self is used in different places and often thought to be a keyword. But unlike in C++, self is not a keyword in Python
+
+What is __init__?
+__init__ is a contructor method in Python and is automatically called to allocate memory when a new object/instance is created. All classes have a __init__ method associated with them. It helps in distinguishing methods and attributes of a class from local variables.
+
+What is break, continue and pass in Python?
+Break	The break statement terminates the loop immediately and the control flows to the statement after the body of the loop.
+Continue	The continue statement terminates the current iteration of the statement, skips the rest of the code in the current iteration and the control flows to the next iteration of the loop.
+Pass	As explained above, the pass keyword in Python is generally used to fill up empty blocks and is similar to an empty statement represented by a semi-colon in languages such as Java, C++, Javascript, etc
+
+How is memory managed in Python?
+Memory management in Python is handled by the Python Memory Manager. The memory allocated by the manager is in form of a private heap space dedicated to Python. All Python objects are stored in this heap and being private, it is inaccessible to the programmer. Though, python does provide some core API functions to work upon the private heap space.
+
+What are Python namespaces? Why are they used?
+Local Namespace includes local names inside a function. the namespace is temporarily created for a function call and gets cleared when the function returns.
+Global Namespace includes names from various imported packages/ modules that are being used in the current project. This namespace is created when the package is imported in the script and lasts until the execution of the script.
+Built-in Namespace includes built-in functions of core Python and built-in names for various types of exceptions
+
+What are some of the most commonly used built-in modules in Python?
+Python modules are the files having python code which can be functions, variables or classes. These go by .py extension. The most commonly available built-in modules are:
+os
+math
+sys
+random
+re
+datetime
+JSON
+
+What are negative indexes and why are they used?
+Negative indexes are the indexes from the end of the list or tuple or string.
+Arr[-1] means the last element of array Arr[]
+
+How do you create a class in Python?
+To create a class in python, we use the keyword “class” as shown in the example below:
+
+class InterviewbitEmployee:
+   def __init__(self, emp_name):
+       self.emp_name = emp_name
+       
+Explain split() and join() functions in Python?
+split() function to split a string based on a delimiter to a list of strings.
+join() function to join a list of strings based on a delimiter to give a single string.
+
+What are iterators in Python?
+An iterator is an object.
+It remembers its state i.e., where it is during iteration (see code below to see how)
+__iter__() method initializes an iterator.
+It has a __next__() method which returns the next item in iteration and points to the next element. Upon reaching the end of iterable object __next__() must return StopIteration exception.
+It is also self-iterable.
+Iterators are objects with which we can iterate over iterable objects like lists, strings, etc.
+
+How Python is interpreted?
+Python as a language is not interpreted or compiled. Interpreted or compiled is the property of the implementation. Python is a bytecode(set of interpreter readable instructions) interpreted generally.
+Source code is a file with .py extension.
+Python compiles the source code to a set of instructions for a virtual machine. The Python interpreter is an implementation of that virtual machine. This intermediate format is called “bytecode”.
+
+Python is an interpreted language. Explain.
+An interpreted language is any programming language that executes its statements line by line. Programs written in Python run directly from the source code, with no intermediary compilation step.
+
+What is PYTHONPATH?
+PYTHONPATH has a role similar to PATH. This variable tells Python Interpreter where to locate the module files imported into a program. It should include the Python source library directory and the directories containing Python source code. PYTHONPATH is sometimes preset by Python Installer.
+
+Explain Inheritance in Python with an example?
+As Python follows an object-oriented programming paradigm, classes in Python have the ability to inherit the properties of another class. This process is known as inheritance. Inheritance provides the code reusability feature. The class that is being inherited is called a superclass or the parent class, and the class that inherits the superclass is called a derived or child class. The following types of inheritance are supported in Python:
+
+What is a dictionary in Python?
+Python dictionary is one of the supported data types in Python. It is an unordered collection of elements. The elements in dictionaries are stored as key-value pairs. Dictionaries are indexed by keys.
+
+What are functions in Python?
+A function is a block of code which is executed only when a call is made to the function. def keyword is used to define a particular function
+
+What are the common built-in data types in Python?
+Python supports the below-mentioned built-in data types:
+
+Immutable data types:
+
+Number
+String
+Tuple
+Mutable data types:
+
+List
+Dictionary
+set
+
+What are local variables and global variables in Python?
+Local variable: Any variable declared inside a function is known as Local variable and it’s accessibility remains inside that function only.
+
+Global Variable: Any variable declared outside the function is known as Global variable and it can be easily accessible by any function present throughout the program.
+
+What are Python packages?
+A Python package refers to the collection of different sub-packages and modules based on the similarities of the function
+
+What are decorators in Python?
+In Python, decorators are necessary functions that help add functionality to an existing function without changing the structure of the function at all. These are represented by @decorator_name in Python and are called in a bottom-up format.
+
+Is indentation required in Python?
+Indentation in Python is compulsory and is part of its syntax.
+All programming languages have some way of defining the scope and extent of the block of codes. In Python, it is indentation. Indentation provides better readability to the code, which is probably why Python has made it compulsory.
+
+
+
+
+
+
